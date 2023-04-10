@@ -3,7 +3,7 @@ import { EditProduct } from "../pages/EditPage";
 import { CreateProduct } from "../pages/CreatePage";
 import { ProductList } from "../pages/ListPage";
 import { ProductChart } from "../pages/ChartPage";
-import { NotFoundPage } from "../pages/404Page";
+import { NotFoundPage } from "../pages/NotFoundPage";
 import { ROOT, CHART, CREATE, EDIT, ALL_PATH } from "./CONSTANTS";
 
 export const RouterConfig = () => {

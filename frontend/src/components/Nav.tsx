@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import { ROOT, CHART, CREATE } from "../navigation/CONSTANTS";
 
 export function Nav() {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand">
+        <Link to={ROOT} className="navbar-brand">
           Products
         </Link>
         <button
@@ -21,12 +22,12 @@ export function Nav() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active" to="/product/create">
+              <Link className="nav-link active" to={CREATE}>
                 Create
               </Link>
             </li>
             <li>
-              <Link to="/chart" className="nav-link active">
+              <Link to={CHART} className="nav-link active">
                 Chart
               </Link>
             </li>

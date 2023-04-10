@@ -2,11 +2,12 @@ import { useState, useEffect } from "react";
 import axios from "../axios";
 import { Link } from "react-router-dom";
 import { Nav } from "../components/Nav";
+import { CREATE, EDIT_ID } from "../navigation/CONSTANTS";
 
 export function ProductList() {
-  const [products, setProducts] = useState([
-    { id: 0, title: "null", amount: "null" },
-  ]);
+  const [products, setProducts] = useState<
+    { id: number; title: string; amount: string }[]
+  >([]);
 
   useEffect(() => {
     fetchProducts();
@@ -35,10 +36,7 @@ export function ProductList() {
       <div className="container">
         <div className="row">
           <div className="conl-12">
-            <Link
-              className="btn btn-primary mb-2 float-end"
-              to="/product/create"
-            >
+            <Link className="btn btn-primary mb-2 float-end" to={CREATE}>
               Create
             </Link>
             <div className="col-12">
@@ -58,7 +56,7 @@ export function ProductList() {
                         <td>
                           <Link
                             className="btn btn-success mb-2 float-end"
-                            to={`/product/edit/${row.id}`}
+                            to={EDIT_ID(row.id)}
                           >
                             Edit
                           </Link>
