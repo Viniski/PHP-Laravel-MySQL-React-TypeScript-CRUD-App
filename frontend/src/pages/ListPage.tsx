@@ -34,7 +34,7 @@ export function ProductList() {
     <>
       <Nav />
       <div className="container">
-        <div className="row">
+        <div className="row mx-auto mt-5">
           <div className="conl-12">
             <Link className="btn btn-primary mb-2 float-end" to={CREATE}>
               Create

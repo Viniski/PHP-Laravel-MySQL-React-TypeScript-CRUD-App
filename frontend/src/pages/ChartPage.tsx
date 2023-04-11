@@ -29,7 +29,7 @@ export function ProductChart() {
     <>
       <Nav />
       <div className="container">
-        <div className="container-fluid mb-3">
+        <div className="container-fluid mb-3 mt-5">
           <Chart
             type="pie"
             width={1349}

@@ -53,7 +53,7 @@ export function EditProduct() {
   return (
     <>
       <Nav />
-      <div className="container">
+      <div className="container mx-auto mt-5">
         <div className="row justify-content-center">
           <div className="conl-12 col-sm-12 col-md-12">
             <div className="card">
@@ -63,7 +63,7 @@ export function EditProduct() {
                 <div className="from-wrapper">
                   <form onSubmit={updateProduct}>
                     <div className="mb-3">
-                      <label className="form-label">Title </label>
+                      <label className="form-label">Name of channel:</label>
                       <input
                         type="text"
                         className="form-control"
@@ -74,21 +74,19 @@ export function EditProduct() {
                       />
                     </div>
                     <div className="mb-3">
-                      <label className="form-label">Example textarea</label>
-                      <textarea
-                        className="form-control"
+                      <label className="form-label">Number of clients:</label>
+                      <input
+                        type="number"
                         id="exampleFormControlTextarea1"
-                        rows={3}
+                        className="form-control"
                         value={amount}
                         onChange={(e) => {
                           setAmount(e.target.value);
                         }}
-                      ></textarea>
+                      />
                     </div>
-
                     <div className="mb-3">
                       <button type="submit" className="btn btn-primary mb-3">
-                        {" "}
                         Update
                       </button>
                     </div>

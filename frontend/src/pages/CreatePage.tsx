@@ -35,16 +35,19 @@ export function CreateProduct() {
     <>
       <Nav />
       <div className="container">
-        <div className="row justify-content-center">
+        <div className="row justify-content-center mt-5">
           <div className="conl-12 col-sm-12 col-md-12">
             <div className="card">
               <div className="card-body">
-                <h3 className="card-title"> Create Form</h3>
+                <h3 className="card-title">
+                  Add the customer acquisition channel and the number of
+                  customers acquired:
+                </h3>
                 <hr></hr>
                 <div className="from-wrapper">
                   <form onSubmit={createProduct}>
                     <div className="mb-3">
-                      <label className="form-label">Name of canal </label>
+                      <label className="form-label">Name of channel:</label>
                       <input
                         type="text"
                         className="form-control"
@@ -55,7 +58,7 @@ export function CreateProduct() {
                       />
                     </div>
                     <div className="mb-3">
-                      <label className="form-label">Number of clients</label>
+                      <label className="form-label">Number of clients:</label>
                       <input
                         type="number"
                         id="exampleFormControlTextarea1"
