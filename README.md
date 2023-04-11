@@ -2,7 +2,7 @@
 
 I completed the recruitment task. I used PHP + Laravel and React + Typescript. For application styles I used bootstrap - quite a quick tool, good for recruitment tasks and lack of time. Applications can be run locally.
 
-Clone the repository, run locally in XAMPP Apache and MySQL, reate a local database in MySQL called "laravel", then perform migrations:
+Clone the repository, run locally in XAMPP Apache and MySQL, create a local database in MySQL called "laravel", then perform migrations:
 
 ```zsh
 php artisan migrate
